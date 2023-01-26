@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;600&display=swap");
+
+* {
+  margin: 0;
+}
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+::selection {
+  background-color: rgb(180, 180, 180);
+}
+body {
+  background-color: #522d12;
+  font-family: "Work Sans", sans-serif;
+}
+#canvas {
+  position: absolute;
+  display: block;
+  top: 8%;
+  left: 0;
+  width: 100%;
+  background-color: skyblue;
+  max-height: 91.5%;
+}
+#header {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  top: -1px;
+  height: 8%;
+  text-shadow: 0 1px 2px gray;
+  background-color: rgb(218, 203, 71);
+  overflow: hidden;
+  box-shadow: 0 1px 100px rgba(190, 255, 177, 0.384);
+}
+#social {
+  position: absolute;
+  display: flex;
+  height: 100px;
+  top: 16%;
+  left: 90%;
+}
+#steam::before {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 15px 0 10px;
+  content: "";
+  background: url("./images/steam.png") no-repeat 0 0;
+  background-size: 100%;
+}
+#discord::before {
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  margin: -1px 0 0 15px;
+  content: "";
+  background: url("./images/discord.png") no-repeat 0 0;
+  background-size: 100%;
+}
+.welcome {
+  position: absolute;
+  display: block;
+  font-size: 18px;
+  top: 25%;
+  margin: 0 20% 0 5%;
+}
+.about {
+  position: absolute;
+  display: block;
+  font-size: 18px;
+  top: 25%;
+  margin: 0 20% 0 5%;
+}
+.quality {
+  position: absolute;
+  display: block;
+  font-size: 18px;
+  top: 25%;
+  margin: 0 20% 0 5%;
+}
+#main1 {
+  position: absolute;
+  display: block;
+  top: 20%;
+  width: 25%;
+  height: auto;
+  left: 5%;
+  padding: 15px;
+  z-index: 300;
+  box-shadow: 12px 10px 3px rgb(80, 172, 72);
+  border-radius: 30px;
+  background-color: white;
+}
+#title1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  color: #1b1b1b;
+  letter-spacing: -2px;
+  font-size: 100%;
+  margin: 0 0 5px 0;
+}
+#description1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 200;
+  color: #777777;
+  font-size: 100%;
+  letter-spacing: -1px;
+  margin: 0 0 5px 0;
+}
+#main2 {
+  position: absolute;
+  display: block;
+  top: 125%;
+  width: 25%;
+  height: auto;
+  left: 67%;
+  padding: 15px;
+  z-index: 300;
+  box-shadow: -12px 10px 3px rgb(141, 119, 88);
+  border-radius: 30px;
+  background-color: white;
+}
+#title2 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  color: #1b1b1b;
+  letter-spacing: -2px;
+  font-size: 100%;
+  margin: 0 0 5px 0;
+}
+#description2 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 200;
+  color: #777777;
+  font-size: 100%;
+  letter-spacing: -1px;
+  margin: 0 0 5px 0;
+}
+#info2 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  color: #252525;
+  font-size: 100%;
+  letter-spacing: 0px;
+}
+#main3 {
+  position: absolute;
+  display: block;
+  top: 240%;
+  width: 25%;
+  height: auto;
+  left: 5%;
+  padding: 15px;
+  z-index: 300;
+  box-shadow: 12px 10px 3px rgb(204, 102, 54);
+  border-radius: 30px;
+  background-color: white;
+}
+#title3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  color: #1b1b1b;
+  letter-spacing: -2px;
+  font-size: 100%;
+  margin: 0 0 5px 0;
+}
+#description3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 200;
+  color: #777777;
+  font-size: 100%;
+  letter-spacing: -1px;
+  margin: 0 0 5px 0;
+}
+#info3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  color: #252525;
+  font-size: 100%;
+  letter-spacing: 0px;
+}
+#selection1 {
+  position: absolute;
+  display: block;
+  top: 115%;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://vectorified.com/image/rock-pattern-vector-20.jpg);
+  opacity: 0.5;
+  background-color: #252525;
+}
+#selection2 {
+  position: absolute;
+  display: block;
+  top: 115%;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://vectorified.com/image/rock-pattern-vector-20.jpg);
+  opacity: 0.5;
+  background-color: #252525;
+}
+.grass1{
+  position: absolute;
+  width: 50%;
+  height: 100px;
+  z-index: 200;
+  top: 85%;
+}
+.grass2{
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  z-index: 200;
+  height: 100px;
+  top: 85%;
+  transform: scaleX(-1);
+}
+.tree{
+  position: absolute;
+  display: block;
+  left: 55%;
+  height: 80%;
+  top: 15%;
+}
+.cloud1{
+  position: absolute;
+  display: block;
+  left: 80%;
+  height: 15%;
+  top: 10%;
+}
+.cloud2{
+  position: absolute;
+  display: block;
+  left: 45%;
+  height: 15%;
+  top: 16%;
+}
+.cloud3{
+  position: absolute;
+  display: block;
+  left: 8%;
+  height: 15%;
+  top: 6%;
+}
+.cloud4{
+  position: absolute;
+  display: block;
+  left: 22%;
+  z-index: 0;
+  height: 15%;
+  top: 35%;
+}
+.lava1{
+  position: absolute;
+  display: block;
+  z-index: 200;
+  height: 11%;
+  left: -1px;
+  width: 25%;
+  top: 197%;
+}
+.lava2{
+  position: absolute;
+  display: block;
+  z-index: 200;
+  height: 11%;
+  left: 24.7%;
+  width: 25%;
+  top: 197%;
+}
+.lava3{
+  position: absolute;
+  display: block;
+  z-index: 200;
+  height: 11%;
+  left: 49.4%;
+  width: 25%;
+  top: 197%;
+}
+.lava4{
+  position: absolute;
+  display: block;
+  z-index: 200;
+  height: 11%;
+  left: 74.1%;
+  width: 25%;
+  top: 197%;
+}
+.lava5{
+  position: absolute;
+  display: block;
+  z-index: 200;
+  height: 11%;
+  left: 98.8%;
+  width: 25%;
+  top: 197%;
+}
+.lavabg{
+  position: absolute;
+  display: block;
+  top: 225%;
+  height: 100%;
+  width: 100%;
+}
+.pause1 {
+  position: absolute;
+  display: block;
+  z-index: 100;
+  top: 95%;
+  height: 20%;
+  background-color: #29150c;
+  width: 100%;
+  color: white;
+  padding: 70px;
+  box-sizing: border-box;
+  font-size: 22px;
+}
+.pause2 {
+  position: absolute;
+  display: block;
+  z-index: 100;
+  top: 205%;
+  height: 20%;
+  background-color: rgb(85, 4, 45);
+  width: 100%;
+  color: white;
+  padding: 70px;
+  box-sizing: border-box;
+  font-size: 22px;
+}
+#footer {
+  position: absolute;
+  display: block;
+  top: 325%;
+  height: 15%;
+  width: 100%;
+  background-color: #1a1a1a;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 200;
+  color: white;
+  font-size: 15px;
+  padding: 60px;
+  box-sizing: border-box;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  text-decoration: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.underline {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+#nav {
+  position: fixed;
+  display: flex;
+  width: 60px;
+  z-index: 400;
+  height: 60px;
+  border-radius: 100%;
+  background-color: white;
+  top: 92%;
+  left: 95%;
+}
+#navigation::before {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin: 0 1px 0 0;
+  content: "";
+  background: url("./images/arrow\ up.png") no-repeat 0 0;
+  background-size: 100%;
+  transition: 0.7s;
+}
+#navigation:hover::before {
+  transform: rotate(360deg);
+}
